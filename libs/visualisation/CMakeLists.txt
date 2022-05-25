@@ -25,7 +25,8 @@ target_include_directories(eqviolib_visualisation
 )
 
 target_link_libraries(eqviolib_visualisation
-    ${GLUT_LIBRARY}
-    ${OPENGL_LIBRARIES}
+    GLUT::GLUT
+    OpenGL::GL
+    OpenGL::GLU
     ${CMAKE_THREAD_LIBS_INIT}
 )
